@@ -1,15 +1,13 @@
 # Keap1-NRF2 pIC50 Streamlit Predictor
 
-This folder is ready to upload to GitHub and connect to Streamlit Community Cloud.
-
 ## Files
 
-- `app.py`: Streamlit predictor app.
-- `train_model.py`: trains the Gradient Boosting model and saves artifacts.
-- `descriptor_utils.py`: SMILES descriptor generation and descriptor alignment.
-- `requirements.txt`: Python packages for Streamlit Cloud.
-- `data/Train_keap.xlsx`: training set.
-- `data/Test_keap.xlsx`: external test set.
+- `app.py`
+- `train_model.py`
+- `descriptor_utils.py`
+- `requirements.txt`
+- `data/Train_keap.xlsx`
+- `data/Test_keap.xlsx`
 - `artifacts/`: generated automatically after training.
 
 ## Local Run
