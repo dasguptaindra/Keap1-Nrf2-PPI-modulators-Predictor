@@ -1,0 +1,11 @@
+streamlit==1.36.0
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.2
+openpyxl==3.1.5
+joblib==1.4.2
+matplotlib==3.9.1
+shap==0.46.0
+rdkit-pypi==2022.9.5
+padelpy==0.1.16
+streamlit-ketcher==0.0.1
