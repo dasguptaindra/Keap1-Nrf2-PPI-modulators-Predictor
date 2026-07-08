@@ -12,9 +12,6 @@ This folder is ready to upload to GitHub and connect to Streamlit Community Clou
 - `data/Test_keap.xlsx`: external test set.
 - `artifacts/`: generated automatically after training.
 
-## Verified Model Result
-
-
 ## Local Run
 
 ```bash
