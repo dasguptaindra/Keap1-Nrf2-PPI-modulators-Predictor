@@ -18,28 +18,6 @@ python train_model.py
 streamlit run app.py
 ```
 
-## GitHub and Streamlit Cloud Deployment
-
-1. Create a new GitHub repository.
-2. Upload all files and folders in this directory to the repository root.
-3. Confirm these files are visible in GitHub:
-   - `app.py`
-   - `descriptor_utils.py`
-   - `requirements.txt`
-   - `packages.txt`
-   - `artifacts/keap_gradient_boosting.joblib`
-   - `artifacts/metrics.json`
-   - `data/Train_keap.xlsx`
-   - `data/Test_keap.xlsx`
-4. Go to Streamlit Community Cloud.
-5. Choose the repository.
-6. Set the main file path to `app.py`.
-7. Deploy.
-
-If you see `FileNotFoundError`, it means GitHub is missing either the `artifacts`
-folder or the `data` folder. The app needs at least
-`artifacts/keap_gradient_boosting.joblib` to start.
-
 ## Input Options
 
 Single compound:
