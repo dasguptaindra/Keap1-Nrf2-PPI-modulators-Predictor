@@ -14,17 +14,6 @@ This folder is ready to upload to GitHub and connect to Streamlit Community Clou
 
 ## Verified Model Result
 
-Using the descriptors from `Train_keap.xlsx`, excluding the first compound-number column and using the last `Value` column as pIC50:
-
-- 5-fold shuffled CV, `random_state=42`
-- R2 CV: 0.6965 +/- 0.0425
-- MAE CV: 0.3820 +/- 0.0207
-- RMSE CV: 0.5450 +/- 0.0357
-- External test R2: 0.7154
-- External test MAE: 0.3598
-- External test RMSE: 0.5098
-
-Your reported MAE and RMSE are exactly reproduced. The reported R2 of about 0.703 is consistent with rounding or a slightly different fold summary.
 
 ## Local Run
 
