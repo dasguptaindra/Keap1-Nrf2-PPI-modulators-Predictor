@@ -1,4 +1,4 @@
-# Keap1-Nrf2 pIC50 Predictor
+# Keap1-Nrf2-PPI-modulators-Predictor
 
 ## Files
 - `app.py`
