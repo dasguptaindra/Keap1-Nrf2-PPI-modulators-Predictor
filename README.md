@@ -33,7 +33,6 @@ Click the Streamlit badge above to launch the application.
 - 🌍 **Accessible Anywhere**
   - Fully deployed online using **Streamlit**.
 
----
 
 ## 🔬 Background
 
