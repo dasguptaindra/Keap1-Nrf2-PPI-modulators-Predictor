@@ -15,7 +15,7 @@ Click the Streamlit badge above to launch the application.
 ## ✨ Features
 
 - 🧠 **AI-Powered Prediction**
-  - Predict the activity of Keap1–Nrf2 PPI modulators using a trained machine learning model.
+  - Predict the activity of Keap1–Nrf2 PPI modulators using a trained ML model.
 
 - ✏️ **Flexible Input**
   - Draw molecules using the integrated **Ketcher** molecular editor.
@@ -25,7 +25,7 @@ Click the Streamlit badge above to launch the application.
   - Upload CSV or Excel files containing multiple compounds for high-throughput virtual screening.
 
 - 📊 **Explainable AI**
-  - Interpret individual predictions using **SHAP Waterfall plots**, highlighting descriptor contributions.
+  - Interpret individual predictions using **SHAP Waterfall plots**, highlighting fingerprint contributions.
 
 - 🎯 **Applicability Domain Analysis**
   - Assess prediction reliability using fingerprint-based similarity to the training set.
@@ -115,9 +115,6 @@ A compound is considered **within the Applicability Domain** if:
 Average Top-5 Tanimoto Similarity > AD Threshold
 ```
 
-
-Complete dependencies are listed in **requirements.txt**.
-
 ## ⭐ Citation
 
 If you use this application in your research, please cite the corresponding publication (to be added).
@@ -127,4 +124,6 @@ If you use this application in your research, please cite the corresponding publ
 If you find this project useful:
 
 ⭐ Star this repository
+
+
 📢 Share it with fellow researchers and students
