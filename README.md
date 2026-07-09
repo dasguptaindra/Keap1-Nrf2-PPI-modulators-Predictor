@@ -7,7 +7,7 @@
 - `descriptor_utils.py`
 - `requirements.txt`
 - `data/Train_keap.xlsx`
-- `data/Test_keap.xlsx
+- `data/Test_keap.xlsx`
 - `artifacts/`: generated automatically after training.
 
 ## Local Run
