@@ -1,4 +1,4 @@
-# Keap1-NRF2 pIC50 Streamlit Predictor
+# Keap1-NRF2 pIC50 Predictor
 
 ## Files
 
