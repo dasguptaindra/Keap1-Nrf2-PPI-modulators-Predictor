@@ -1,7 +1,7 @@
 # Keap1-Nrf2-PPI-modulators-Predictor
-Welcome to the Keap1-Nrf2-PPI-modulators Predictor, a ML-based web application designed for researchers, medicinal chemists and drug developers
+Welcome to the **Keap1-Nrf2-PPI-modulators Predictor**, a ML-based web application designed for researchers, medicinal chemists and drug developers
 
-💡 Why Use This Tool?
+💡 **Why Use This Tool?**
 
 ✨ Easy to use - Input SMILES and get instant prediction
 
