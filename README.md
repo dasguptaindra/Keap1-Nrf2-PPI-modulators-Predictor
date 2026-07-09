@@ -43,10 +43,7 @@ This model supports virtual screening workflows and accelerates early-stage drug
 ## Applicability Domain
 
 For each query, the app compares its fingerprint bits against all training compounds and takes the average Tanimoto similarity of the top 5 most similar training compounds. The AD threshold is the median, or 50th percentile, of all pairwise training-set Tanimoto similarities. A compound is marked within AD when:
-
-```text
-average top 5 Tanimoto similarity > threshold
-``
+**average top 5 Tanimoto similarity > threshold**
 
 ⭐ **Support**
 
