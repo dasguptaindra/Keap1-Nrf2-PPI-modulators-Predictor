@@ -243,7 +243,7 @@ with tab_single:
     try:
         from streamlit_ketcher import st_ketcher
 
-        drawn = st_ketcher(height=360)
+        drawn = st_ketcher(height=200)
         if drawn:
             smiles = drawn
     except Exception:
