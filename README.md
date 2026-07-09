@@ -1,7 +1,6 @@
-# Keap1-NRF2 pIC50 Predictor
+# Keap1-Nrf2 pIC50 Predictor
 
 ## Files
-
 - `app.py`
 - `train_model.py`
 - `descriptor_utils.py`
@@ -30,7 +29,6 @@ For each query, the app compares its fingerprint bits against all training compo
 ```text
 average top 5 Tanimoto similarity > threshold
 ```
-The current model uses `PubchemFP*` and `FP_*` columns for fingerprint Tanimoto similarity.
 
 ## Important Descriptor Note
 
