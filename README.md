@@ -1,4 +1,4 @@
-# 🧪 Keap1-Nrf2-PPI Modulators Predictor
+#  Keap1-Nrf2-PPI Modulators Predictor
 
 Welcome to the **Keap1-Nrf2-PPI Modulators Predictor**, a machine learning-based web application developed to assist researchers, medicinal chemists, and drug discovery scientists in predicting the activity of **Keap1–Nrf2 protein–protein interaction (PPI) modulators** from molecular structures.
 
