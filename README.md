@@ -1,51 +1,130 @@
-# Keap1-Nrf2-PPI-modulators-Predictor
-Welcome to the **Keap1-Nrf2-PPI-modulators Predictor**, a ML-based web application designed for researchers, medicinal chemists and drug developers
+# 🧪 Keap1-Nrf2-PPI Modulators Predictor
 
-💡 **Why Use This Tool?**
+Welcome to the **Keap1-Nrf2-PPI Modulators Predictor**, a machine learning-based web application developed to assist researchers, medicinal chemists, and drug discovery scientists in predicting the activity of **Keap1–Nrf2 protein–protein interaction (PPI) modulators** from molecular structures.
 
-✨ Easy to use - Input SMILES and get instant prediction
+---
 
-🧠 AI-Driven Results - Predict Keap1-Nrf2-PPI-modulators activity with a trained ML model
+## 🚀 Launch the Web App
 
-🧬 Explainable Predictions - SHAP Waterfall plot to interpret feature contributions
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://keap1-nrf2-ppi-modulators-predictor.streamlit.app/)
 
-⚗️ Useful for Drug Discovery
+Click the Streamlit badge above to launch the application.
 
-🌐 Accessible Anywhere - Hosted online via Streamlit
+---
 
-👇 Click the link to start predicting! 🔗 Streamlit App
+## ✨ Features
 
-🔬 Background
+- 🧠 **AI-Powered Prediction**
+  - Predict the activity of Keap1–Nrf2 PPI modulators using a trained machine learning model.
 
-This model supports virtual screening workflows and accelerates early-stage drug discovery.
-## Files
-- `app.py`
-- `train_model.py`
-- `descriptor_utils.py`
-- `requirements.txt`
-- `data/Train_keap.xlsx`
-- `data/Test_keap.xlsx`
-- `artifacts/`: generated automatically after training.
+- ✏️ **Flexible Input**
+  - Draw molecules using the integrated **Ketcher** molecular editor.
+  - Or directly enter **SMILES** strings.
+
+- 📂 **Batch Prediction**
+  - Upload CSV or Excel files containing multiple compounds for high-throughput virtual screening.
+
+- 📊 **Explainable AI**
+  - Interpret individual predictions using **SHAP Waterfall plots**, highlighting descriptor contributions.
+
+- 🎯 **Applicability Domain Analysis**
+  - Assess prediction reliability using fingerprint-based similarity to the training set.
+
+- 🌍 **Accessible Anywhere**
+  - Fully deployed online using **Streamlit**.
+
+---
+
+## 🔬 Background
+
+The **Keap1–Nrf2 signaling pathway** plays a critical role in regulating oxidative stress and cellular defense mechanisms. Small molecules capable of disrupting the **Keap1–Nrf2 protein–protein interaction** have emerged as promising therapeutic candidates for numerous diseases.
+
+This web application employs a validated machine learning model to facilitate:
+
+- Virtual screening
+- Hit prioritization
+- Early-stage drug discovery
+- Lead optimization
+
+---
+
+## 📁 Repository Structure
+
+```
+.
+├── app.py
+├── train_model.py
+├── descriptor_utils.py
+├── requirements.txt
+├── data
+│   ├── Train_keap.xlsx
+│   └── Test_keap.xlsx
+└── artifacts/
+    ├── model.pkl
+    ├── scaler.pkl
+    ├── descriptors.pkl
+    └── ...
+```
+
+The **artifacts** directory is automatically generated after model training.
+
+---
+
+## 📝 Input Options
+
+### Single Compound Prediction
+
+- Draw a molecule using the embedded **Ketcher** editor.
+- Or paste a **SMILES** string.
+
+---
+
+### Batch Prediction
+
+Upload a **CSV** or **Excel (.xlsx)** file containing a column named:
+
+```
+SMILES
+```
+
+For each compound, the application reports:
+
+- Predicted activity
+- Average Top-5 Tanimoto similarity
+- Applicability Domain threshold
+- Applicability Domain status (Within/Outside)
+
+---
+
+## 🧬 Applicability Domain (AD)
+
+Prediction reliability is evaluated using **fingerprint-based Tanimoto similarity**.
+
+For every query compound:
+
+1. Molecular fingerprints are generated.
+2. Tanimoto similarity is calculated against all training compounds.
+3. The five most similar training compounds are identified.
+4. The average similarity of these Top-5 neighbors is computed.
+
+The AD threshold is defined as the **median (50th percentile)** of all pairwise Tanimoto similarities within the training dataset.
+
+A compound is considered **within the Applicability Domain** if:
+
+```text
+Average Top-5 Tanimoto Similarity > AD Threshold
+```
 
 
-## Input Options
+Complete dependencies are listed in **requirements.txt**.
 
-**Single compound:**
+## ⭐ Citation
 
-- Sketch a molecule with the Ketcher widget.
-- Or enter SMILES.
+If you use this application in your research, please cite the corresponding publication (to be added).
 
-**Batch mode:**
+## 🤝 Support
 
-- Upload CSV/XLSX containing a `SMILES` column.
-- The app returns predicted pIC50, average top-5 Tanimoto similarity, AD threshold, and whether each compound is within the applicability domain.
+If you find this project useful:
 
-## Applicability Domain
-
-For each query, the app compares its fingerprint bits against all training compounds and takes the average Tanimoto similarity of the top 5 most similar training compounds. The AD threshold is the median, or 50th percentile, of all pairwise training-set Tanimoto similarities. A compound is marked within AD when:
-**average top 5 Tanimoto similarity > threshold**
-
-⭐ **Support**
-
-If you find this tool useful, share it with researchers and students!
-
+⭐ Star this repository
+📢 Share it with fellow researchers and students
