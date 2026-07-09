@@ -35,4 +35,4 @@ average top 5 Tanimoto similarity > threshold
 The model was trained on selected PaDEL fingerprints and RDKit topological torsion fingerprint bits. For SMILES prediction, the app attempts to calculate:
 
 - `FP_*` columns with RDKit hashed topological torsion bits.
-- `APC2D*` and `PubchemFP*` columns with PaDEL through `padelpy`.
+- `APC2D*` and `PubchemFP*` columns with PaDEL.
