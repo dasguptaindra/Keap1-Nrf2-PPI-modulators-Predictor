@@ -271,7 +271,7 @@ with tab_single:
             st.markdown(
                 f"<div class='metric-box'>Predicted activity: {pred:.3f}"
                 f"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
-                f"Applicability domain: {'Within AD' if ad['within_ad'] else 'Outside AD'} "
+                f"Applicability domain: {'Within AD' if ad['within_ad'] else 'Outside AD'} ",
                 unsafe_allow_html=True,
             )
             left, right = st.columns(2)
