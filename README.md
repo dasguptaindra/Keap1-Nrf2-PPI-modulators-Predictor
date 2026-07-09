@@ -13,16 +13,14 @@
 
 ## Input Options
 
-Single compound:
+**Single compound:**
 
 - Sketch a molecule with the Ketcher widget.
 - Or enter SMILES.
-- Or upload a one-row CSV/XLSX containing the 51 model descriptor columns.
 
-Batch mode:
+**Batch mode:**
 
 - Upload CSV/XLSX containing a `SMILES` column.
-- Or upload CSV/XLSX containing the 51 descriptor columns.
 - The app returns predicted pIC50, average top-5 Tanimoto similarity, AD threshold, and whether each compound is within the applicability domain.
 
 ## Applicability Domain
@@ -32,7 +30,6 @@ For each query, the app compares its fingerprint bits against all training compo
 ```text
 average top 5 Tanimoto similarity > threshold
 ```
-
 The current model uses `PubchemFP*` and `FP_*` columns for fingerprint Tanimoto similarity.
 
 ## Important Descriptor Note
