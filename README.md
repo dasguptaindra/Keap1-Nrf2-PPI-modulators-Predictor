@@ -10,13 +10,6 @@
 - `data/Test_keap.xlsx`
 - `artifacts/`: generated automatically after training.
 
-## Local Run
-
-```bash
-pip install -r requirements.txt
-python train_model.py
-streamlit run app.py
-```
 
 ## Input Options
 
