@@ -6,6 +6,6 @@ openpyxl==3.1.5
 joblib==1.4.2
 matplotlib==3.9.1
 shap==0.46.0
-rdkit-pypi==2022.9.5
+rdkit==2022.9.5
 padelpy==0.1.16
 streamlit-ketcher==0.0.1
