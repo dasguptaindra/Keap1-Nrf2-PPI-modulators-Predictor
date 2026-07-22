@@ -219,7 +219,7 @@ def plot_ad(ad):
                label=f"Leverage threshold = {ad_threshold:.3f}")
     ax.scatter([ad_n + 1], [ad["leverage"]], marker="*", s=700, color="#f59e0b",
                edgecolor="#111827", linewidth=1.5, label="Query compound", zorder=3)
-    ax.set_xlim(0, ad_n + 2)
+    ax.set_xlim(0, ad_n + 25)
     upper_limit = max(float(np.max(train_leverage)), ad["leverage"], ad_threshold) * 1.15
     ax.set_ylim(0, upper_limit if upper_limit > 0 else 1)
     ax.set_xlabel("Compound index", fontsize=22, fontweight="bold", fontname="Times New Roman")
