@@ -262,7 +262,7 @@ def descriptors_from_user_smiles(smiles):
     return row, "Automatic PaDEL/RDKit descriptor calculation"
 
 
-st.title("Keap1-NRF2 pIC50 Predictor")
+st.title("Keap1-Nrf2 PPI inhibitor Predictor")
 tab_single, tab_batch = st.tabs(["Single compound", "Batch upload"])
 
 with tab_single:
