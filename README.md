@@ -1,6 +1,6 @@
-#  Keap1-Nrf2-PPI Modulators Predictor
+#  Keap1-Nrf2-PPI inhibitors Predictor
 
-Welcome to the **Keap1-Nrf2-PPI Modulators Predictor**, a machine learning-based web application developed to assist researchers, medicinal chemists, and drug discovery scientists in predicting the activity of **Keap1–Nrf2 protein–protein interaction (PPI) modulators** from molecular structures.
+Welcome to the **Keap1-Nrf2-PPI inhibitors Predictor**, a machine learning-based web application developed to assist researchers, medicinal chemists, and drug discovery scientists in predicting the activity of **Keap1–Nrf2 protein–protein interaction (PPI) inhibitors** from molecular structures.
 
 ---
 
@@ -15,7 +15,7 @@ Click the Streamlit badge above to launch the application.
 ## ✨ Features
 
 - 🧠 **AI-Powered Prediction**
-  - Predict the activity of Keap1–Nrf2 PPI modulators using a trained ML model.
+  - Predict the activity of Keap1–Nrf2 PPI inhibitors using a trained ML model.
 
 - ✏️ **Flexible Input**
   - Draw molecules using the integrated **Ketcher** molecular editor.
@@ -28,7 +28,7 @@ Click the Streamlit badge above to launch the application.
   - Interpret individual predictions using **SHAP Waterfall plots**, highlighting fingerprint contributions.
 
 - 🎯 **Applicability Domain Analysis**
-  - Assess prediction reliability using fingerprint-based similarity to the training set.
+  - Assess prediction reliability using leverage approach.
 
 - 🌍 **Accessible Anywhere**
   - Fully deployed online using **Streamlit**.
@@ -97,22 +97,7 @@ For each compound, the application reports:
 
 ## 🧬 Applicability Domain (AD)
 
-Prediction reliability is evaluated using **fingerprint-based Tanimoto similarity**.
-
-For every query compound:
-
-1. Molecular fingerprints are generated.
-2. Tanimoto similarity is calculated against all training compounds.
-3. The five most similar training compounds are identified.
-4. The average similarity of these Top-5 neighbors is computed.
-
-The AD threshold is defined as the **median (50th percentile)** of all pairwise Tanimoto similarities within the training dataset.
-
-A compound is considered **within the Applicability Domain** if:
-
-```text
-Average Top-5 Tanimoto Similarity > AD Threshold
-```
+Prediction reliability is evaluated using **leverage approach**.
 
 ## ⭐ Citation
 
